@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_4/page/category/categorywidget.dart';
 import 'page/homewidget.dart';
-import 'page/category/categorybody.dart';
+// import 'page/category/categorybody.dart';
 import 'page/product/productwidget.dart';
 
 class Mainpage extends StatefulWidget {
@@ -48,10 +48,12 @@ class _MainpageState extends State<Mainpage> {
             BottomNavigationBarItem(
             icon: Icon(Icons.list_rounded),
             label: 'Product',
-            ),
+            ), 
+            
         ],
+        selectedLabelStyle: optionStyle,
         currentIndex: _selectIndex,
-        selectedItemColor: Color.fromARGB(255, 11, 7, 233),
+        selectedItemColor: const Color.fromARGB(255, 11, 7, 233),
         onTap: _onItemTapped,
       ),
     ));
